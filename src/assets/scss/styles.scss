@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topSliderWrapper{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        background:#212158 ;
+        height: 200px;
+    }
+    .topSliderDetails{
+        padding-top: 60px;
+        padding-left: 60px;
+        position: relative;
+        .title{
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        .subtitle{
+            font-size: 15px;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        .sort-tex{
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span{
+                font-weight: bold;
+                color: #212158;
+                &:last-child{
+                    padding-left: 15px;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        height: 5px;
+                        width: 5px;
+                        background: #212158;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 5px;
+                        top: 7px;
+                    }
+                }
+            }
+        }
+        .topSliderButton{
+            margin-top: 50px;
+            @media screen and (min-width:767px) {
+                margin-top: 150px;
+            }
+            button{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: #212158;
+                border: 1px solid #fff;
+                color: #fff;
+                &:hover{
+                    background: #fff;
+                    color: #000;
+                }
+                margin-right: 10px;
+            }
+        }
+    }
+    .slider-wrapper{
+        padding-top: 60px;
+        .slick-prev{
+            display: none !important;
+        }
+        .slick-track{
+            display: flex;
+            .slick-slide{
+                margin-left: 20px;
+                margin-right: 20px;
+                .item{
+                    height: 300px;
+                    transition: height 0.5s, width 0.5s;
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &.slick-current{
+                    .item{
+                        height: 450px;
+                        transition: width 2s, height 4s;
+                        transition: transform 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+.overViewSliderWrapper{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #212158;
+    position: relative;
+    .title{
+        font-size: 42px;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .description{
+        margin-bottom: 40px;
+        padding: 0 15px;
+        p{
+            font-size: 15px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+    }
+    .slider-wrapper{
+        position: relative;
+        .slick-arrow{
+            z-index: 1;
+            &.slick-next{
+                right: 100px;
+                &::before{
+                    font-size: 40px;
+                }
+            }
+            &.slick-prev{
+                left: 100px;
+                &::before{
+                    font-size: 40px;
+                }
+            }
+        }
+        .slick-track{
+            display: flex;
+            .slick-slide{
+                margin-left: 20px;
+                margin-right: 20px;
+                .item{
+                    height: 300px;
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
