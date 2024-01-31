@@ -1,6 +1,6 @@
 # Dcastalia Assignment
 
-This an assignment for Dcastalia.
+This is a assignment for Dcastalia.
 
 ## Getting Started
 
