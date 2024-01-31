@@ -1,8 +1,23 @@
-# React + Vite
+# Dcastalia Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description of your React app.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+  [Download Node.js and npm](https://nodejs.org/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   npm install
+   npm run dev
+   Visit [http://localhost:3000/](http://localhost:5173/) in your browser.
+
